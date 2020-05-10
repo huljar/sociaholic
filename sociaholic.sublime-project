@@ -2,26 +2,17 @@
     "folders":
     [
         {
-            "path": "backend",
+            "path": "server",
             "folder_exclude_patterns":
             [
                 "node_modules"
             ]
         },
         {
-            "path": "frontend",
+            "path": "client",
             "folder_exclude_patterns":
             [
                 "node_modules"
-            ]
-        },
-        {
-            "path": ".",
-            "folder_exclude_patterns":
-            [
-                "node_modules",
-                "backend",
-                "frontend"
             ]
         }
     ]

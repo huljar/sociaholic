@@ -4,7 +4,7 @@
         "esModuleInterop": true,
         "importHelpers": true,
         "module": "commonjs",
-        "outDir": "../dist/backend",
+        "outDir": "build",
         "removeComments": true,
         "sourceMap": true,
         "strict": true,

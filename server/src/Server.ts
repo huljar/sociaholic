@@ -51,7 +51,7 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
  *                              Serve front-end content
  ***********************************************************************************/
 
-const reactDir = path.join(__dirname, "..", "dist", "frontend");
+const reactDir = path.join(__dirname, "..", "..", "dist", "frontend");
 app.use(express.static(reactDir));
 app.get("*", (req: Request, res: Response) => {
     res.sendFile("index.html", { root: reactDir });
