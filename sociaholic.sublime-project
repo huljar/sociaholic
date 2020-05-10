@@ -1,0 +1,28 @@
+{
+    "folders":
+    [
+        {
+            "path": "backend",
+            "folder_exclude_patterns":
+            [
+                "node_modules"
+            ]
+        },
+        {
+            "path": "frontend",
+            "folder_exclude_patterns":
+            [
+                "node_modules"
+            ]
+        },
+        {
+            "path": ".",
+            "folder_exclude_patterns":
+            [
+                "node_modules",
+                "backend",
+                "frontend"
+            ]
+        }
+    ]
+}
