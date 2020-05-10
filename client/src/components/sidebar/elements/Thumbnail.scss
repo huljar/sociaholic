@@ -1,0 +1,12 @@
+.Thumbnail {
+    flex: 0 0 auto;
+    display: flex;
+    height: 100%;
+
+    .logo {
+        min-width: 16px;
+        min-height: 16px;
+        height: 100%;
+        border-radius: 50%;
+    }
+}

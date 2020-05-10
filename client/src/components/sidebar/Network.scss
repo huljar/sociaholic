@@ -1,0 +1,14 @@
+.Network {
+    display: flex;
+    align-items: center;
+    height: 3.6rem;
+    width: 100%;
+    padding: .7rem;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+    &:hover {
+        border: 1px solid grey;
+    }
+}

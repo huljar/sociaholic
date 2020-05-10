@@ -1,0 +1,29 @@
+.App {
+    background-color: whitesmoke;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    .App-toolbar {
+        flex: 0 0 40px;
+        width: 100%;
+        display: flex;
+    }
+
+    .App-main {
+        flex: 1 1 auto;
+        display: flex;
+        align-items: stretch;
+    }
+
+    .App-sidebar {
+        flex: 0 0 250px;
+        display: flex;
+        align-items: stretch;
+    }
+
+    .App-editArea {
+        flex: 1 1 auto;
+    }
+}
