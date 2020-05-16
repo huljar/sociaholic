@@ -4,7 +4,7 @@
     "private": true,
     "scripts": {
         "start": "react-scripts start",
-        "build": "react-scripts build && mv build ../dist/client",
+        "build": "react-scripts build && rm -rf ../dist/client && mv build ../dist/client && ln -s ../../client/node_modules ../dist/client/node_modules",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },

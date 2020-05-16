@@ -2,7 +2,8 @@
     "name": "sociaholic",
     "version": "0.1.0",
     "scripts": {
-        "start": "concurrently --kill-others -n express,react \"cd server && npm run start:dev\" \"cd client && npm run start\"",
+        "start:dev": "concurrently --kill-others -n express,react \"cd server && npm run start:dev\" \"cd client && npm run start\"",
+        "start:prod": "cd server && node -r module-alias/register ../dist/server",
         "build": "concurrently -n express,react \"cd server && npm run build\" \"cd client && npm run build\"",
         "postinstall": "(cd server && npm install); (cd client && npm install);"
     },

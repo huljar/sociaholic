@@ -5,14 +5,14 @@
     "scripts": {
         "start": "node -r module-alias/register ./dist",
         "start:dev": "nodemon --config nodemon.json",
-        "build": "node ./build.js",
+        "build": "rm -rf ../dist/server && node ./build.js && ln -s ../../server/node_modules ../dist/server/node_modules",
         "test": "nodemon --config nodemon.test.json"
     },
     "_moduleAliases": {
-        "@daos": "dist/daos",
-        "@entities": "dist/entities",
-        "@shared": "dist/shared",
-        "@server": "dist/Server"
+        "@daos": "../dist/server/daos",
+        "@entities": "../dist/server/entities",
+        "@shared": "../dist/server/shared",
+        "@server": "../dist/server/Server"
     },
     "dependencies": {
         "command-line-args": "^5.1.1",
