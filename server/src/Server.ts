@@ -38,7 +38,7 @@ if (process.env.NODE_ENV === "production") {
 app.use("/api", BaseRouter);
 
 // Print API errors
-app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
+app.use((err: Error, req: Request, res: Response) => {
     logger.error(err.message, err);
     return res.status(BAD_REQUEST).json({
         error: err.message,

@@ -2,5 +2,6 @@
   "watch": ["spec"],
   "ext": "spec.ts",
   "ignore": ["spec/support"],
-  "exec": "ts-node -r tsconfig-paths/register ./spec"
+  "exec": "ts-node -r tsconfig-paths/register ./spec",
+  "legacyWatch": true
 }
